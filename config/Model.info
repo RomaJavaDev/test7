@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<ns6:modelInfo xsi:type="ns6:ModelInfo" modelshopVersion="3.1" buildNumber="4571" modelConfigVersion="13" owner="admin" folder="" path="github" gitServerName="github" gitRepositoryName="test7" loadPath="github" version="16" name="github" lastUpdated="2024-10-10T09:48:54.059+03:00" lastUpdatedBy="admin" id="admin:MODEL:github" xmlns:ns6="http://www.modelshop.com/model/model/types" xmlns:ns5="http://www.modelshop.com/datacore/generator/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/datacore/repository/types" xmlns:ns3="http://www.modelshop.com/datacore/message/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelStatistics name="github" owner="admin" version="0" openHours="0.0" modelUrl="http://localhost:8080/modelshop/index.jsp#model=admin:MODEL:github" lastUsedHours="0.0" activeUsers="1" memoryUseMB="0" cpuUsagePercent="0.0" id="github">
+        <modelAccess userName="admin" lastAccessed="2024-10-10T09:49:06.848+03:00" accessCount="1"/>
+    </modelStatistics>
+</ns6:modelInfo>

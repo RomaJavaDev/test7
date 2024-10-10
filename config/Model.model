@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<ns6:modelConfig xsi:type="ns6:ModelConfig" folder="" pauseCalculations="false" entityCode="17" loadPath="github" entityName="github" version="16" name="github" lastUpdated="2024-10-10T09:48:54.059+03:00" lastUpdatedBy="admin" id="admin:MODEL:github" xmlns:ns6="http://www.modelshop.com/model/model/types" xmlns:ns5="http://www.modelshop.com/datacore/generator/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/datacore/repository/types" xmlns:ns3="http://www.modelshop.com/datacore/message/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <datalists entityCode="18" entityName="server" version="16" name="server" created="2024-10-10T09:48:54.059+03:00" createdBy="admin" lastUpdated="2024-10-10T09:48:54.059+03:00" lastUpdatedBy="admin" id="server">
+        <dataFields type="text" fieldCode="100" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="101" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+        <dataFields type="map" fieldCode="102" readOnly="true" rawType="com.modelshop.datacore.datatype.MapRecord" name="xmlResponse" description="XML content field" initialized="true" id="xmlResponse"/>
+    </datalists>
+    <views allColumns="true" default="true" modelView="true" entityName="github" name="github" description="Default view for list github" id="github"/>
+    <views allColumns="true" default="true" entityName="server" name="server" description="Default view for list server" id="server"/>
+    <connectors layoutDetected="true" entityName="server" version="13" name="server" created="2024-10-10T09:48:54.059+03:00" createdBy="admin" lastUpdated="2024-10-10T09:48:54.059+03:00" lastUpdatedBy="admin" id="server">
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <connectorFields ignore="false" mapField="xmlResponse" type="map" readOnly="true" rawType="LinkedHashMap" name="xmlResponse" description="XML content field" id="xmlResponse"/>
+        <dataSource connectorUrl="server.xml">
+            <fileSource>
+                <dataSourceRefs>server.xml</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig autoDetect="true" connectorMediaType="xml">
+            <xmlMedia/>
+        </mediaConfig>
+    </connectors>
+    <extra name="ModelCanvasCoordinates" description="Coordinates for ModelCanvasCoordinates" id="ModelCanvasCoordinates">
+        <body>{"CONNECTOR:context":{"x":-158,"y":-4},"DATALIST:context":{"x":-59,"y":3},"CONNECTOR:catalina":{"x":-153,"y":-19},"DATALIST:catalina":{"x":-54,"y":-10},"CONNECTOR:server":{"x":-112,"y":106},"DATALIST:server":{"x":-42,"y":35}}</body>
+    </extra>
+</ns6:modelConfig>
